@@ -72,26 +72,3 @@ cursor.close()
 conexao_banco.close()
 print("Carga realizada!")
 
-# ===========================
-# CONTEXTO DO PROJETO
-# ===========================
-# Este script faz parte de um pipeline de Engenharia de Dados.
-#
-# Até o momento:
-# - O ETL de PRODUTOS foi concluído (extração, tratamento e carga no SQL Server)
-# - O ETL de VENDAS foi concluído (extração, validações simples e carga no SQL Server)
-#
-# Próximo passo (amanhã 10/01):
-# - Implementar o ELT no SQL Server
-# - Realizar JOIN entre Vendas e Produtos
-# - Calcular valor_total da venda (quantidade * preco_unitario)
-# - Ajustar validação de vendas com base na validade do produto
-# - Criar tabela ou view analítica final (Fato_Vendas)
-#
-# Observação importante:
-# - Transformações simples foram feitas em Python
-# - Regras que dependem de relacionamento entre tabelas serão feitas no SQL
-# - Nenhum dado é deletado, apenas classificado como válido ou inválido
-#
-# Projeto com foco em boas práticas de mercado (nível júnior/estágio)
-# ===========================
