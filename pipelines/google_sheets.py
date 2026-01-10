@@ -25,7 +25,6 @@ SELECT
 	Ven.Tipo_venda,
 	CASE
 		WHEN Pro.Preco_unitario <= 0 THEN 'Venda invalida'
-		WHEN Pro.Ativo = 'Produto inativo' THEN 'Venda invalida'
 		WHEN Ven.Validacao_venda = 'Venda invalida' THEN 'Venda invalida'
 		ELSE 'Venda valida'
 		END AS Status,
@@ -33,6 +32,7 @@ SELECT
 FROM dbo.Vendas AS Ven
 LEFT JOIN dbo.Produtos AS Pro
 	ON Pro.Produto_id = Ven.Produto_id 
+
 
 '''
 
