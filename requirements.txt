@@ -1,0 +1,5 @@
+pandas
+pyodbc
+gspread
+oauth2client
+gspread-dataframe

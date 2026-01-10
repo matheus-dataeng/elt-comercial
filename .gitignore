@@ -1,0 +1,16 @@
+# Ambiente virtual
+venv/
+.env/
+
+# Credenciais
+*.json
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
