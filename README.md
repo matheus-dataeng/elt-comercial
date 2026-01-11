@@ -14,6 +14,6 @@ Descrição
 Validação de Vendas
 - O ETL aplica regras para determinar se cada venda é válida ou inválida:
 - Preço unitário do produto <= 0 → Venda inválida
-- Produto inativo → Venda inválida
 - Vendas já marcadas como inválidas → Venda inválida
 - Vendas que não se enquadram em nenhum desses critérios são consideradas válidas.
+
